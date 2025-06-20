@@ -23,7 +23,7 @@ const QrScanner = () => {
     };
   }, []);
 
-  return <div id="reader" style={{ width: "300px" }}></div>;
+  return <div id="reader" ></div>;
 };
 
 export default QrScanner;
