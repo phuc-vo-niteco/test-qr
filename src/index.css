@@ -14,8 +14,12 @@ body {
   height: 100vh !important;;
   position: absolute;
   margin: auto;
-}
 
+}
+#qr-shaded-region {
+  width: 200px;
+  height: 200px;
+}
 video {
   height: 100% !important;
 }

@@ -5,17 +5,14 @@ const QrScanner = () => {
   useEffect(() => {
     const html5QrCode = new Html5Qrcode("reader");
     html5QrCode.start(
-      { facingMode: "environment" },
       {
         fps: 10,
         qrbox: { width: 250, height: 250 },
         aspectRatio: 9 / 16,
-      },
-      (decodedText, decodedResult) => {
-        alert(`Kết quả: ${decodedText}`);
-      },
-      (errorMessage) => {
-        // ignore lỗi
+        disableFlip: true,
+        videoConstraints: {
+          facingMode: "environment"
+        }
       }
     );
 
