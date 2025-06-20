@@ -15,3 +15,7 @@ body {
   position: absolute;
   margin: auto;
 }
+
+video {
+  height: 100% !important;
+}
